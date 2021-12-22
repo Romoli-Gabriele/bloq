@@ -1,7 +1,7 @@
 <?php
-use app\Models\Post;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-use app\Models\User;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +21,6 @@ Route::get('/details/{post}',function($slug){
 
     //trova un post con chiave $slug e passalo alla vista "post"
 
-    ddd(User::test());
     $post = Post::find($slug);
     
 
